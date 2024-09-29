@@ -51,7 +51,7 @@ CREATE TABLE adlist
     invalid_domains INTEGER NOT NULL DEFAULT 0,
     status INTEGER NOT NULL DEFAULT 0
 );
-INSERT INTO adlist VALUES(1,'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',1,1727041671,1727041671,'Migrated from /etc/pihole/adlists.list',1727041671,114742,1,1);
+INSERT INTO adlist VALUES(1,'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',1,1727041671,1727041671,'Migrated from /etc/pihole/adlists.list',1727577122,115263,1,1);
 CREATE TABLE domainlist_by_group
 (
     domainlist_id INTEGER NOT NULL REFERENCES domainlist (id),
@@ -60,14 +60,14 @@ CREATE TABLE domainlist_by_group
 );
 INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(1,2,0);
 INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(2,3,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(4,5,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(5,6,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(6,7,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(7,8,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(8,9,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(9,10,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(10,11,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(12,13,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(13,14,0);
-INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(14,15,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(3,5,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(4,6,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(5,7,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(6,8,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(7,9,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(8,10,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(9,11,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(10,13,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(11,14,0);
+INSERT INTO domainlist_by_group(rowid,domainlist_id,group_id) VALUES(12,15,0);
 COMMIT;
