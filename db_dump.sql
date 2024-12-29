@@ -51,7 +51,7 @@ CREATE TABLE adlist
     invalid_domains INTEGER NOT NULL DEFAULT 0,
     status INTEGER NOT NULL DEFAULT 0
 );
-INSERT INTO adlist VALUES(1,'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',1,1727041671,1727041671,'Migrated from /etc/pihole/adlists.list',1734838322,120177,1,1);
+INSERT INTO adlist VALUES(1,'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',1,1727041671,1727041671,'Migrated from /etc/pihole/adlists.list',1735443121,117393,1,1);
 CREATE TABLE domainlist_by_group
 (
     domainlist_id INTEGER NOT NULL REFERENCES domainlist (id),
